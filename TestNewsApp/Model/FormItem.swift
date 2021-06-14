@@ -29,6 +29,7 @@ protocol FormItem {
     var id: UUID { get }
     var formId: FormField { get }
     var val: Any? { get }
+    var validations: [ValidationManager] { get}
 }
 
 /*
@@ -36,12 +37,16 @@ protocol FormItem {
  */
 
 class FormComponent : FormItem, Identifiable {
+    let validations: [ValidationManager]
+    
     var formId: FormField
     let id = UUID()
     var val: Any?
     
-    init(_ id: FormField) {
+    init(_ id: FormField,
+         validations: [ValidationManager] = []) {
         self.formId = id
+        self.validations = validations
     }
 }
 
@@ -55,10 +60,11 @@ final class TextFormComponent : FormComponent {
     
     init(id: FormField,
          placeHolder: String,
-         keyboardType: UIKeyboardType = .default) {
+         keyboardType: UIKeyboardType = .default,
+         validations: [ValidationManager] = []) {
         self.placeHolder = placeHolder
         self.keyboardType = keyboardType
-        super.init(id)
+        super.init(id, validations: validations)
     }
     
 }
@@ -71,9 +77,10 @@ final class DateComponent : FormComponent {
     let mode: DatePickerComponents
     
     init(id: FormField,
-         mode: DatePickerComponents) {
+         mode: DatePickerComponents,
+         validations: [ValidationManager] = []) {
         self.mode = mode
-        super.init(id)
+        super.init(id, validations: validations)
     }
 }
 

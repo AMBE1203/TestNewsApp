@@ -19,10 +19,20 @@ struct LoginView: View {
                     switch component {
                     case is TextFormComponent:
                         TextFormFieldView(component: component as! TextFormComponent)
+                            .environmentObject(contentBuilder)
                     case is DateComponent:
                         DateFormView(component: component as! DateComponent)
+                            .environmentObject(contentBuilder)
                     case is ButtonComponent:
-                        ButtonFormView(component: component as! ButtonComponent)
+                        ButtonFormView(component: component as! ButtonComponent) {id in
+                            switch id {
+                            case .submit:
+                                // validate here
+                                contentBuilder.validate()
+                            default:
+                                break
+                            }
+                        }
                     default:
                         EmptyView()
                     }
@@ -32,6 +42,17 @@ struct LoginView: View {
             .padding(.top, 100)
             
         }.padding(.horizontal)
+        .onChange(of: contentBuilder.state, perform: { state in
+            switch state {
+            case .valid(user: let user):
+                print("Form is valid with user: \(user)")
+            case .fail(error: let error):
+                print("Failed: \(error.errorDescription)")
+            case .none:
+                break
+            
+            }
+        })
     }
 }
 

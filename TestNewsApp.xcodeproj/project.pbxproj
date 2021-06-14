@@ -32,6 +32,10 @@
 		84AA4B072676637E00B5D2DD /* SystemThemeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84AA4B062676637E00B5D2DD /* SystemThemeManager.swift */; };
 		84AA4B092676669C00B5D2DD /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84AA4B082676669C00B5D2DD /* Theme.swift */; };
 		84EDB949267264FF00AE2145 /* ErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EDB948267264FF00AE2145 /* ErrorView.swift */; };
+		84FA5ED02677A1CF00A4B6EE /* RegexFormItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FA5ECF2677A1CF00A4B6EE /* RegexFormItem.swift */; };
+		84FA5ED22677A20700A4B6EE /* ValidationError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FA5ED12677A20700A4B6EE /* ValidationError.swift */; };
+		84FA5ED42677A2D000A4B6EE /* ValidationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FA5ED32677A2D000A4B6EE /* ValidationManager.swift */; };
+		84FA5ED72677B02600A4B6EE /* FormState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FA5ED62677B02600A4B6EE /* FormState.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -61,6 +65,10 @@
 		84AA4B062676637E00B5D2DD /* SystemThemeManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SystemThemeManager.swift; sourceTree = "<group>"; };
 		84AA4B082676669C00B5D2DD /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
 		84EDB948267264FF00AE2145 /* ErrorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorView.swift; sourceTree = "<group>"; };
+		84FA5ECF2677A1CF00A4B6EE /* RegexFormItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegexFormItem.swift; sourceTree = "<group>"; };
+		84FA5ED12677A20700A4B6EE /* ValidationError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidationError.swift; sourceTree = "<group>"; };
+		84FA5ED32677A2D000A4B6EE /* ValidationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidationManager.swift; sourceTree = "<group>"; };
+		84FA5ED62677B02600A4B6EE /* FormState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormState.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +102,7 @@
 		8435201626716A3E00F58585 /* TestNewsApp */ = {
 			isa = PBXGroup;
 			children = (
+				84FA5ED52677B01B00A4B6EE /* Event */,
 				84377778267681060099A1F4 /* Regex */,
 				84377775267678FE0099A1F4 /* Builder */,
 				843777702676723F0099A1F4 /* Screens */,
@@ -206,6 +215,9 @@
 			isa = PBXGroup;
 			children = (
 				843777792676811E0099A1F4 /* RegexPatterns.swift */,
+				84FA5ECF2677A1CF00A4B6EE /* RegexFormItem.swift */,
+				84FA5ED12677A20700A4B6EE /* ValidationError.swift */,
+				84FA5ED32677A2D000A4B6EE /* ValidationManager.swift */,
 			);
 			path = Regex;
 			sourceTree = "<group>";
@@ -225,6 +237,14 @@
 				84AA4B082676669C00B5D2DD /* Theme.swift */,
 			);
 			path = Theme;
+			sourceTree = "<group>";
+		};
+		84FA5ED52677B01B00A4B6EE /* Event */ = {
+			isa = PBXGroup;
+			children = (
+				84FA5ED62677B02600A4B6EE /* FormState.swift */,
+			);
+			path = Event;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -303,10 +323,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				8437777A2676811E0099A1F4 /* RegexPatterns.swift in Sources */,
+				84FA5ED72677B02600A4B6EE /* FormState.swift in Sources */,
 				843777742676743F0099A1F4 /* FormItem.swift in Sources */,
 				843520352671758F00F58585 /* NewsService.swift in Sources */,
 				8435202826716B1900F58585 /* HomeView.swift in Sources */,
 				8435201826716A3E00F58585 /* TestNewsAppApp.swift in Sources */,
+				84FA5ED22677A20700A4B6EE /* ValidationError.swift in Sources */,
 				8435202B26716D5F00F58585 /* NewsResponse.swift in Sources */,
 				841E59102676275C00F4B167 /* FeedView.swift in Sources */,
 				8437776D267670470099A1F4 /* TextFormFieldView.swift in Sources */,
@@ -316,6 +338,8 @@
 				8435202E26716F7900F58585 /* NewsEndpoint.swift in Sources */,
 				8437776F267670A70099A1F4 /* DateFormView.swift in Sources */,
 				84AA4B04267660C000B5D2DD /* Constant.swift in Sources */,
+				84FA5ED42677A2D000A4B6EE /* ValidationManager.swift in Sources */,
+				84FA5ED02677A1CF00A4B6EE /* RegexFormItem.swift in Sources */,
 				846E6D4E26718A6B0053A59F /* ArticleView.swift in Sources */,
 				8435203D26717F2900F58585 /* NewsViewModel.swift in Sources */,
 				84AA4B092676669C00B5D2DD /* Theme.swift in Sources */,
