@@ -30,6 +30,14 @@ struct HomeView: View {
                 .tabItem { Image(systemName: "person.fill")
                     Text("Login")
                 }
+            WeatherView()
+                .tabItem { Image(systemName: "sunrise")
+                    Text("Weather")
+                }
+            QuotesScreen()
+                .tabItem { Image(systemName: "sunrise")
+                    Text("Quotes")
+                }
         }
         .onAppear {
             SystemThemeManager.shared.handleTheme(darkMode: darkModeEnabled, system: systemThemeEnabled)

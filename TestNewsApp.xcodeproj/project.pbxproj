@@ -26,8 +26,19 @@
 		843777742676743F0099A1F4 /* FormItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843777732676743F0099A1F4 /* FormItem.swift */; };
 		843777772676791B0099A1F4 /* FormContentBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843777762676791B0099A1F4 /* FormContentBuilder.swift */; };
 		8437777A2676811E0099A1F4 /* RegexPatterns.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843777792676811E0099A1F4 /* RegexPatterns.swift */; };
+		843C8D7226E5F6B20046B56C /* QuoteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843C8D7126E5F6B20046B56C /* QuoteView.swift */; };
+		843C8D7426E5F8C70046B56C /* QuoteService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843C8D7326E5F8C70046B56C /* QuoteService.swift */; };
+		8449510526AD8364006830F6 /* ForecastReading.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8449510426AD8364006830F6 /* ForecastReading.swift */; };
+		8449510726ADB6D4006830F6 /* ForecastView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8449510626ADB6D4006830F6 /* ForecastView.swift */; };
+		8449510926ADB965006830F6 /* ForecastListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8449510826ADB965006830F6 /* ForecastListView.swift */; };
+		8449510B26ADBB13006830F6 /* HourlyForecastView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8449510A26ADBB13006830F6 /* HourlyForecastView.swift */; };
+		8449893A272FE20C0044310D /* QuoteViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84498939272FE20C0044310D /* QuoteViewModel.swift */; };
+		8468C7DD26A726780016E696 /* WeatherView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8468C7DC26A726780016E696 /* WeatherView.swift */; };
 		846E6D4A267189260053A59F /* URLImage in Frameworks */ = {isa = PBXBuildFile; productRef = 846E6D49267189260053A59F /* URLImage */; };
 		846E6D4E26718A6B0053A59F /* ArticleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846E6D4D26718A6B0053A59F /* ArticleView.swift */; };
+		848B412626D630AF00E9624F /* APIConstans.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848B412526D630AF00E9624F /* APIConstans.swift */; };
+		848B412926D631B500E9624F /* Quote.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848B412826D631B500E9624F /* Quote.swift */; };
+		848B412B26D6327A00E9624F /* QuotesScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848B412A26D6327A00E9624F /* QuotesScreen.swift */; };
 		84AA4B04267660C000B5D2DD /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84AA4B03267660C000B5D2DD /* Constant.swift */; };
 		84AA4B072676637E00B5D2DD /* SystemThemeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84AA4B062676637E00B5D2DD /* SystemThemeManager.swift */; };
 		84AA4B092676669C00B5D2DD /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84AA4B082676669C00B5D2DD /* Theme.swift */; };
@@ -60,7 +71,18 @@
 		843777732676743F0099A1F4 /* FormItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormItem.swift; sourceTree = "<group>"; };
 		843777762676791B0099A1F4 /* FormContentBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormContentBuilder.swift; sourceTree = "<group>"; };
 		843777792676811E0099A1F4 /* RegexPatterns.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegexPatterns.swift; sourceTree = "<group>"; };
+		843C8D7126E5F6B20046B56C /* QuoteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuoteView.swift; sourceTree = "<group>"; };
+		843C8D7326E5F8C70046B56C /* QuoteService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuoteService.swift; sourceTree = "<group>"; };
+		8449510426AD8364006830F6 /* ForecastReading.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForecastReading.swift; sourceTree = "<group>"; };
+		8449510626ADB6D4006830F6 /* ForecastView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForecastView.swift; sourceTree = "<group>"; };
+		8449510826ADB965006830F6 /* ForecastListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForecastListView.swift; sourceTree = "<group>"; };
+		8449510A26ADBB13006830F6 /* HourlyForecastView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HourlyForecastView.swift; sourceTree = "<group>"; };
+		84498939272FE20C0044310D /* QuoteViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuoteViewModel.swift; sourceTree = "<group>"; };
+		8468C7DC26A726780016E696 /* WeatherView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherView.swift; sourceTree = "<group>"; };
 		846E6D4D26718A6B0053A59F /* ArticleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleView.swift; sourceTree = "<group>"; };
+		848B412526D630AF00E9624F /* APIConstans.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIConstans.swift; sourceTree = "<group>"; };
+		848B412826D631B500E9624F /* Quote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quote.swift; sourceTree = "<group>"; };
+		848B412A26D6327A00E9624F /* QuotesScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuotesScreen.swift; sourceTree = "<group>"; };
 		84AA4B03267660C000B5D2DD /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
 		84AA4B062676637E00B5D2DD /* SystemThemeManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SystemThemeManager.swift; sourceTree = "<group>"; };
 		84AA4B082676669C00B5D2DD /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
@@ -102,6 +124,7 @@
 		8435201626716A3E00F58585 /* TestNewsApp */ = {
 			isa = PBXGroup;
 			children = (
+				848B412426D600A700E9624F /* Constants */,
 				84FA5ED52677B01B00A4B6EE /* Event */,
 				84377778267681060099A1F4 /* Regex */,
 				84377775267678FE0099A1F4 /* Builder */,
@@ -135,11 +158,15 @@
 		8435202626716B0200F58585 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				843C8D7126E5F6B20046B56C /* QuoteView.swift */,
 				846E6D4D26718A6B0053A59F /* ArticleView.swift */,
 				84EDB948267264FF00AE2145 /* ErrorView.swift */,
 				8437776C267670470099A1F4 /* TextFormFieldView.swift */,
 				8437776E267670A70099A1F4 /* DateFormView.swift */,
 				84377771267672810099A1F4 /* ButtonFormView.swift */,
+				8449510626ADB6D4006830F6 /* ForecastView.swift */,
+				8449510826ADB965006830F6 /* ForecastListView.swift */,
+				8449510A26ADBB13006830F6 /* HourlyForecastView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -147,8 +174,10 @@
 		8435202926716D4D00F58585 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				848B412826D631B500E9624F /* Quote.swift */,
 				8435202A26716D5F00F58585 /* NewsResponse.swift */,
 				843777732676743F0099A1F4 /* FormItem.swift */,
+				8449510426AD8364006830F6 /* ForecastReading.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -173,6 +202,7 @@
 			isa = PBXGroup;
 			children = (
 				843520342671758F00F58585 /* NewsService.swift */,
+				843C8D7326E5F8C70046B56C /* QuoteService.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -196,9 +226,11 @@
 		843777702676723F0099A1F4 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				848B412726D6317F00E9624F /* Quotes */,
 				841E590F2676275C00F4B167 /* FeedView.swift */,
 				8437776A26766E250099A1F4 /* LoginView.swift */,
 				841E590C2676273A00F4B167 /* SettingView.swift */,
+				8468C7DC26A726780016E696 /* WeatherView.swift */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -220,6 +252,23 @@
 				84FA5ED32677A2D000A4B6EE /* ValidationManager.swift */,
 			);
 			path = Regex;
+			sourceTree = "<group>";
+		};
+		848B412426D600A700E9624F /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				848B412526D630AF00E9624F /* APIConstans.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		848B412726D6317F00E9624F /* Quotes */ = {
+			isa = PBXGroup;
+			children = (
+				848B412A26D6327A00E9624F /* QuotesScreen.swift */,
+				84498939272FE20C0044310D /* QuoteViewModel.swift */,
+			);
+			path = Quotes;
 			sourceTree = "<group>";
 		};
 		84AA4B02267660AF00B5D2DD /* Config */ = {
@@ -328,19 +377,30 @@
 				843520352671758F00F58585 /* NewsService.swift in Sources */,
 				8435202826716B1900F58585 /* HomeView.swift in Sources */,
 				8435201826716A3E00F58585 /* TestNewsAppApp.swift in Sources */,
+				8468C7DD26A726780016E696 /* WeatherView.swift in Sources */,
 				84FA5ED22677A20700A4B6EE /* ValidationError.swift in Sources */,
 				8435202B26716D5F00F58585 /* NewsResponse.swift in Sources */,
 				841E59102676275C00F4B167 /* FeedView.swift in Sources */,
+				848B412926D631B500E9624F /* Quote.swift in Sources */,
+				843C8D7226E5F6B20046B56C /* QuoteView.swift in Sources */,
 				8437776D267670470099A1F4 /* TextFormFieldView.swift in Sources */,
 				8435203A26717ED600F58585 /* ResultState.swift in Sources */,
+				8449510B26ADBB13006830F6 /* HourlyForecastView.swift in Sources */,
+				8449893A272FE20C0044310D /* QuoteViewModel.swift in Sources */,
 				84EDB949267264FF00AE2145 /* ErrorView.swift in Sources */,
 				843520322671737200F58585 /* APIError.swift in Sources */,
+				848B412B26D6327A00E9624F /* QuotesScreen.swift in Sources */,
+				848B412626D630AF00E9624F /* APIConstans.swift in Sources */,
 				8435202E26716F7900F58585 /* NewsEndpoint.swift in Sources */,
 				8437776F267670A70099A1F4 /* DateFormView.swift in Sources */,
 				84AA4B04267660C000B5D2DD /* Constant.swift in Sources */,
+				8449510526AD8364006830F6 /* ForecastReading.swift in Sources */,
 				84FA5ED42677A2D000A4B6EE /* ValidationManager.swift in Sources */,
+				8449510726ADB6D4006830F6 /* ForecastView.swift in Sources */,
 				84FA5ED02677A1CF00A4B6EE /* RegexFormItem.swift in Sources */,
+				8449510926ADB965006830F6 /* ForecastListView.swift in Sources */,
 				846E6D4E26718A6B0053A59F /* ArticleView.swift in Sources */,
+				843C8D7426E5F8C70046B56C /* QuoteService.swift in Sources */,
 				8435203D26717F2900F58585 /* NewsViewModel.swift in Sources */,
 				84AA4B092676669C00B5D2DD /* Theme.swift in Sources */,
 				84377772267672810099A1F4 /* ButtonFormView.swift in Sources */,
@@ -479,7 +539,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"TestNewsApp/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = TestNewsApp/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -500,7 +560,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"TestNewsApp/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = TestNewsApp/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
